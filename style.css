@@ -1,0 +1,221 @@
+h5{
+    color: darkcyan;
+}
+/* IDs */
+#cssExterno{
+    color: deeppink;
+}
+#titulo1{
+    color:sienna;
+}
+
+/* Class */
+.lorem{
+    color: dodgerblue;
+}
+.opc100{
+    color: rgba(255,0, 0, 1.0);
+}
+.opc50{
+    color: rgba(255,0, 0, 0.5);
+}
+.opc25{
+    color: rgba(255,0, 0, 0.25);
+}
+.hexadex{
+    color: #FF0066;
+}
+/* Backgrounds */
+#backColor{
+    background-color: rgba(0, 255, 242, 0.25);
+}
+#backImage{
+    background-image: url(Assets/backgroundteste.jpg);
+}
+body{
+    background-image: url(Assets/bodyBackground.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Divs */
+#tiposCss{
+    background-color: rgba(245, 86, 86, 0.432);
+}
+#cm{
+    background-color: rgba(100, 148, 237, 0.726);
+    width: 1cm;
+    height:1cm;
+}
+#mm{
+    background-color: rgba(237, 100, 100, 0.726);
+    width: 1mm;
+    height:1mm;
+}
+#in{
+    background-color: rgba(105, 237, 100, 0.726);
+    width: 1in;
+    height:1in;
+}
+#px{
+    background-color: rgba(239, 255, 10, 0.726);
+    width: 10px;
+    height:10px;
+}
+#pt{
+    background-color: rgba(206, 10, 255, 0.726);
+    width: 10pt;
+    height:10pt;
+}
+#pc{
+    background-color: rgba(255, 10, 10, 0.726);
+    width: 1pc;
+    height:1pc;
+}
+/*Usando EM e REM*/
+.container{ /* Div Pai*/
+    font-size: 20px;
+    width: 400px;
+    height: 90px;
+    background-color:rgba(0, 0, 255, 0.603) ;
+}
+
+.inside{ /* Div Filho(Herda as características da Div Pai*/
+    font-size: 2em; /*"em"=elemento / font-size ta recebendo 2x o tamanho da Fonte da Div Pai! (40px)*/
+    width: 10em;
+    background-color:rgba(255, 0, 21, 0.603) ;
+    /*utilizando a unidade REM (Herda as caracteristicas do ROOT(no caso, o arquivo "html"))*/
+    /*font-size: 2rem;*/
+}
+html{
+    font-size: 20px;
+}
+/* Usando VW(largura da Janela/pagina)*/
+.container2{
+width: 50vw;
+height: 60px;
+background-color:rgba(0, 0, 255, 0.603) ;
+}
+.inside2{
+width: 200px;
+background-color:rgba(255, 0, 21, 0.603) ;
+}
+/* Usando VH(altura da Janela/pagina)*/
+.container3{
+    width: 50vh;
+    height: 60px;
+    background-color:rgba(0, 0, 255, 0.603) ;
+    }
+    .inside3{
+    width: 200px;
+    background-color:rgba(255, 0, 21, 0.603) ;
+    }
+/* Usando Vmin(menor valor da Janela/pagina)*/
+.container4{
+    width: 50vmin;
+    height: 60px;
+    background-color:rgba(0, 0, 255, 0.603) ;
+    }
+    .inside4{
+    width: 200px;
+    background-color:rgba(255, 0, 21, 0.603) ;
+    }
+    /* Usando Vmax(maior valor da Janela/pagina)*/
+.container5{
+    width: 50vmax;
+    height: 60px;
+    background-color:rgba(0, 0, 255, 0.603) ;
+    }
+    .inside5{
+    width: 200px;
+    background-color:rgba(255, 0, 21, 0.603) ;
+    }
+    /*Usando %(varia em porcentagem ao elemento pai!)*/
+    .container6{
+        width: 50vmax;
+        height: 60px;
+        background-color:rgba(0, 0, 255, 0.603) ;
+        }
+        .inside6{
+        width:100%;
+        background-color:rgba(255, 0, 21, 0.603) ;
+        }
+
+    #base{
+        height: 10px;
+        padding: 10px;
+        background-color: crimson;
+    }
+    #container6{ /*Utilizando Margin, que é uma margem para fora do elemento*/
+        margin: 10px; 
+        background-color: aqua;
+    }
+    /*Bordas*/
+    .borda{
+        border-width: 2px;
+        border-style: solid;
+        border-color: darkgoldenrod;
+        border-radius: 6px;
+    }
+    .quadrado{
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+    }
+    /*Box Model*/
+    .container7{
+        background-color: darkorange;
+        border:2px solid black;
+        margin: 4px;
+        padding: 5px;
+
+    }
+    .content{
+        background-color: darkseagreen;
+    }
+    /*Textos*/
+    .text{
+        color: darkred;
+        text-align: justify;
+        text-transform: capitalize;
+        text-indent: 35px;
+        text-decoration: underline;
+        letter-spacing: 2px;
+        line-height: 25px;
+        word-spacing: 5px;
+        text-shadow: 2px 2px 5px black;
+    }
+    /*Fontes*/
+    body{
+        font-family: monospace;
+        font-style: normal;
+        font-size: smaller;
+        font-weight: lighter;/*"Largura da fonte"*/
+        font-variant: inherit;
+        text-align: justify;
+    }
+    #fontExterna{
+        font-family: 'Do Hyeon', sans-serif;
+        text-align: justify;
+        color: blue;
+    }
+ /*Botoes de Links*/
+ .links{
+     text-decoration: none;
+     background-color: chocolate;
+     color: white;
+     padding: 10px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     border-radius: 10px;
+     border: 2px solid black;
+ }
+ 
+.links:hover{
+    background: white;
+    color: chocolate;
+}
+.links:active{
+    background: white;
+    color: chocolate;
+}

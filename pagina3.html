@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>CSS básico</title>
+    <!-- CSS Interno separa(localmente)o css do html, mais organizado que o INLINE -->
+    <style>
+        /* Todo parametro passado dentro da "tag" Style vai receber as modificaçoes colocadas 
+         Ex: 
+         Todo "h5" vai receber color: darkcyan;
+        */
+        h5{
+            color: darkcyan;
+        }
+    </style>
+    <!-- Link para o arquivo CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Página de CSS básico</h1>
+    <h4><a href="index.html">Voltar para a página principal.</a></h4>
+    <p><a href="pagina2.html">Acesse a página de links úteis!</a></p>
+    <hr>
+    <br>
+    <!-- CSS Inline -->
+    <div id="tiposCss">  <!-- uso de div (agrupamento de elementos)-->
+        <h4>CSS Inline:</h4>
+        <p>Cor do texto usando "style" <strong>Inline</strong>.</p>
+        <p style="color: crimson;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti facere, commodi ab, labore consectetur perspiciatis quae placeat perferendis mollitia quod rerum repellendus eaque ad velit ipsa aut, ex repellat?</p>
+        <hr>
+        <!-- CSS Interno (Dentro do próprio arquivo HTML, porém mais organizado que o "Inline") -->
+        <h4>CSS Interno:</h4>
+        <p>Cor do texto usando <strong>CSS Interno</strong>.</p>
+        <p><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate adipisci hic natus sit, consequatur ab dolor voluptatem inventore sint placeat, ipsum, quia explicabo nulla rem? Aliquid quia libero exercitationem nulla?</h5></p>
+        <hr>
+        <!-- CSS Externo (Padrao de organizaçao mais elevado) -->
+        <h4>CSS Externo:</h4>
+        <!-- Usando IDs (Para apenas 1 elemento da pagina)-->
+        <p>Cor do texto usando <strong>CSS Externo</strong>(Uso de IDs e Class).</p>
+        <h4 id="titulo1">Título Lorem:</h4>
+        <p id="cssExterno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus praesentium, magnam aliquid dolorum neque consequuntur aut velit exercitationem nihil aliquam! Aspernatur dolore rerum, sequi blanditiis non error provident deserunt.</p>
+        <br>
+        <!-- usando Class (Para mais de um elemento da pagina)-->
+        <h4>Título Lorem 2</h4>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium, mollitia tempore reprehenderit explicabo voluptatem iure odit consequuntur voluptates itaque voluptatibus incidunt expedita fugit molestiae soluta labore a quasi quisquam.</p>
+    </div> <!-- Fim da div-->
+
+    <hr>
+    <!-- Cores -->
+    <h4>Cores no CSS:</h4>
+    <h4>Sistema RGBA (Possui modificaçoes na opacidade do elemento): </h4>
+    <p class="opc100">Texto 1 <p>(100% opaco)</p> </p>
+    <p class="opc50">Texto 2 <p>(50% opaco)</p> </p>
+    <p class="opc25">Texto 3 <p>(25% opaco)</p> </p>
+    <h4>Sistema HEXADECIMAL</h4>
+    <p class="hexadex">Texto com cor hexadecimal</p>
+
+    <hr>
+    <!-- Background -->
+    <h4>Backgrounds:</h4>
+    <ul>
+        <!-- Background Color -->
+        <li>Background Color:</li>
+        <p id="backColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores quas accusamus. Voluptas laborum, animi iure vero culpa enim eos veniam nemo ratione sint deleniti, eligendi, veritatis ipsum sapiente quos.</p>
+
+        <!-- Background Image -->
+        <li>Background Image:</li>
+        <p id="backImage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatem reprehenderit vitae voluptas quos magni iste necessitatibus, porro iure accusamus saepe repudiandae libero minima, expedita nulla, assumenda rem odio cupiditate?</p>
+    </ul>
+
+    <hr>
+    <!-- Unidades de Medida -->
+    <h4>Unidades de medida:</h4>
+    <ul>
+        <li>Fixas:</li>
+         <div id="cm"> centimetro</div>
+         <br>
+         <div id="mm">milimetro</div>
+         <br>
+         <div id="in">polegada/"inches"</div>
+         <br>
+         <div id="px">pixel</div>
+         <br>
+         <div id="pt">ponto</div>
+         <br>
+         <div id="pc">picas</div>
+<br>
+        <li>Referencia:</li>
+        <h4>Usando EM e REM:</h4>
+        <div class="container"> <!--Div Pai-->
+            Texto em "Div Container"
+            <div class="inside"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside"
+            </div>
+        </div>
+        <h4>Usando "%"(varia em porcentagem ao elemento pai):</h4>
+        <div class="container6"> <!--Div Pai-->
+            Texto em "Div Container6"
+            <div class="inside6"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside6"
+            </div>
+        </div>
+        <h4>Usando VW(varia com relaçao ao width/largura):</h4>
+        <div class="container2"> <!--Div Pai-->
+            Texto em "Div Container2"
+            <div class="inside2"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside2"
+            </div>
+        </div>
+        <h4>Usando VH(varia em relaçao ao height/altura):</h4>
+        <div class="container3"> <!--Div Pai-->
+            Texto em "Div Container3"
+            <div class="inside3"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside3"
+            </div>
+        </div>
+        <h4>Usando VMIN(varia em relaçao ao menor valor width ou height):</h4>
+        <div class="container4"> <!--Div Pai-->
+            Texto em "Div Container4"
+            <div class="inside4"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside4"
+            </div>
+        </div>
+        <h4>Usando VMAX(varia em relaçao ao maior valor width ou height):</h4>
+        <div class="container5"> <!--Div Pai-->
+            Texto em "Div Container5"
+            <div class="inside5"> <!--Div Filho(Herda as caracteristicas da Div Pai)-->
+                Texto em "Div Inside5"
+            </div>
+        </div>    
+    </ul>
+
+    <hr>
+    <h4>Margin e Padding:</h4>
+    <div id="base">Texto dentro de div usando Padding</div>
+    <div id="container6">
+        <div id="conteudo">
+            Texto dentro de div usando Margin
+        </div>
+    </div>
+    Texto fora da margem
+    <hr>
+    <h4>Bordas:</h4>
+    <p class="borda">Elemento utilizando borda.</p>
+    <p class="quadrado borda">Quadrado criado com "border"</p>
+    <hr>
+    <h4>Box Model:</h4>
+    <div class="container7">
+        <div class="content">
+            soft green=content /orange=container w/padding /black=container border
+        </div>
+    </div>
+    <hr>
+    <h4>Ajustes de Texto:</h4>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium possimus laboriosam nostrum facere labore vero vel itaque autem esse illum accusamus suscipit cupiditate iste, eaque aut, sequi eos. Obcaecati, ipsam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum, eum aliquid et nulla itaque libero praesentium unde quas non molestias consequuntur ex? Eveniet aliquam inventore possimus similique autem ullam!</p>
+    <p><strong>Fonte externa:</strong></p>
+    <p><strong>utilizando import por link</strong></p>
+    <p id="fontExterna">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem, porro sequi nulla error ad aliquid illum consectetur alias veritatis, amet quod consequuntur commodi. Non suscipit labore ipsam reiciendis quaerat.</p>
+    <hr>
+    <h4>Botoes de Link</h4>
+    <a href="" class="links">Botao 1</a>
+    <a href="" class="links">Botao 2</a>
+</html>
